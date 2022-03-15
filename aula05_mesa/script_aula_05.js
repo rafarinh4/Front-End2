@@ -56,7 +56,7 @@ const listaFelinos = [
         imgURL:"./imagens/chita.jpg"
     }
 ];
-
+let div = document.getElementById('container');
 window.onload = function () {
     dados();
 }
@@ -66,12 +66,14 @@ function dados() {
     for (let felino of listaFelinos){
         let card = `
         <div class="item">
-        <img src="${listaFelinos.imgURL}">
-        <h2>${felino.titulo}</h2>
-        <p>${felino.descricao}</p>
+            <img src="${felino.imgURL}">
+            <h2>${felino.titulo}</h2>
+            <p>${felino.descricao}</p>
         </div>
-        `;
-        container.innerHTML += felino;
+        `
+        let No = document.createElement('div')
+        No.innerHTML = card;
+        div.appendChild(No)
     }
 }
 
