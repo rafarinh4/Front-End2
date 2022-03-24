@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <header>
+        <h1>Quem é esse Pokemon??</h1>
+    </header>
+    <div class="bg-image"></div>
+    <main class="container">
+        <section class="form">
+            <form  id="form">
+                <label for="name">Nome:</label>
+                <input class="input" type="text" id="name">
+                <label for="image">Url imagem:</label>
+                <input class="input" type="text" id="image">
+                <label for="description">Descrição:</label>
+                <input class="input" type="text" id="description">
+                <label for="type">Tipo:</label>
+                <select class="input" name="type" id="type">
+                    <option value=" "></option>
+                    <option value="Normal">Normal</option>
+                    <option value="Fogo">Fogo</option>
+                    <option value="Agua">Agua</option>
+                    <option value="Grama">Grama</option>
+                    <option value="Voador">Voador</option>
+                    <option value="Lutador">Lutador</option>
+                    <option value="Veneno">Veneno</option>
+                    <option value="Eletrico">Eletrico</option>
+                    <option value="Terra">Terra</option>
+                    <option value="Pedra">Pedra</option>
+                    <option value="Psiquico">Psiquico</option>
+                    <option value="Gelo">Gelo</option>
+                    <option value="Inseto">Inseto</option>
+                    <option value="Fantasma">Fantasma</option>
+                    <option value="Ferro">Ferro</option>
+                    <option value="Dragão">Dragão</option>
+                    <option value="Sombrio">Sombrio</option>
+                    <option value="Fada">Fada</option>
+                </select>
+                <div class="btn">
+                    <input class="button" type="submit" value="Cadastrar" id="submit">
+                    <input class="button" type="button" value="Remover" id="remove">
+                </div>
+            </form>
+        </section>
+        
+        <section class="cards" id="cards">            
+        </section>
+    </main>
+    <footer >
+        <ul>
+            <li>Checkpoint 01 - Front end II</li>
+            <li>© Daniel Martins e Rafael Camargo</li>
+            <li>T11 - 2022</li>
+        </ul>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
